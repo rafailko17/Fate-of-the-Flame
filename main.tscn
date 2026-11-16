@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://bky58t6oupl5n"]
+
+[ext_resource type="Script" uid="uid://docoav3coi828" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Control" unique_id=1128772857]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 3.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig7tw")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=590679576]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -170.0
+offset_top = 16.0
+offset_right = -33.0
+offset_bottom = 61.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 32
+text = "SCORE: 0"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1886471392]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -265.0
+offset_top = -110.0
+offset_right = 265.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+
+[node name="Card1" type="Button" parent="HBoxContainer" unique_id=369310947]
+custom_minimum_size = Vector2(150, 220)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "?"
+
+[node name="Card2" type="Button" parent="HBoxContainer" unique_id=1568661501]
+custom_minimum_size = Vector2(150, 220)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "?"
+
+[node name="Card3" type="Button" parent="HBoxContainer" unique_id=1517824080]
+custom_minimum_size = Vector2(150, 220)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "?"
+
+[node name="WinLabel" type="Label" parent="." unique_id=949183489]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.76500005
+anchor_right = 0.5
+anchor_bottom = 0.76500005
+offset_left = -359.0
+offset_top = -19.720032
+offset_right = 359.0
+offset_bottom = 19.279968
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 28
+text = "So you won, but still, we are all going to die one day..."
+horizontal_alignment = 1
+
+[node name="PlayAgainButton" type="Button" parent="." unique_id=80947527]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.89800006
+anchor_right = 0.5
+anchor_bottom = 0.89800006
+offset_left = -73.5
+offset_top = -25.904053
+offset_right = 80.0
+offset_bottom = 26.095947
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 28
+text = "Play Again"
